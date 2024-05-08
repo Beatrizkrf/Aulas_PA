@@ -1,0 +1,438 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOwSQ1tb/GoHKsL2p0mO0ky",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Beatrizkrf/Aulas_PA/blob/main/La%C3%A7os_de_Repti%C3%A7%C3%A3o\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OKSDrZbdYmZC",
+        "outputId": "4c316b0a-b022-449e-a6ba-0b5d96d50c9b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n",
+            "Bom dia\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')\n",
+        "print('Bom dia')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Laço de repetição FOR**"
+      ],
+      "metadata": {
+        "id": "EYr6Yxb4akhm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Laço de repetição FOR\n",
+        "for i in range(10):\n",
+        "  #print(i)\n",
+        "  #print('Bom dia')\n",
+        "  print(i+1,'- Bom dia')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NRQ2uRG5ZsN1",
+        "outputId": "90c347e9-a925-4ab2-91b3-303e41b83788"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 - Bom dia\n",
+            "2 - Bom dia\n",
+            "3 - Bom dia\n",
+            "4 - Bom dia\n",
+            "5 - Bom dia\n",
+            "6 - Bom dia\n",
+            "7 - Bom dia\n",
+            "8 - Bom dia\n",
+            "9 - Bom dia\n",
+            "10 - Bom dia\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Mostar todos os números ímpares de 1 a 30\n",
+        "for i in range(1,31):\n",
+        "  if i%2==0:\n",
+        "   print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XM3HellCbjPm",
+        "outputId": "f6e636cb-2569-4ccf-e132-2aee7384ebb4"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "10\n",
+            "12\n",
+            "14\n",
+            "16\n",
+            "18\n",
+            "20\n",
+            "22\n",
+            "24\n",
+            "26\n",
+            "28\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Contador de um número inicial e um número final\n",
+        "#Digitados pelo usuário\n",
+        "\n",
+        "inicio = int(input('Digite o primeiro número:' ))\n",
+        "fim = int(input('Digite o primeiro número:' ))\n",
+        "\n",
+        "if inicio>fim:\n",
+        "  #aux = inicio\n",
+        "  #inicio = fim\n",
+        "  #fim= aux\n",
+        "\n",
+        "  inicio, fim = fim,inicio\n",
+        "\n",
+        "for i in range(inicio,fim+1):\n",
+        "  print(i)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W4bBSLYQfZdi",
+        "outputId": "aceab0f6-325c-41f9-a217-3637cf2ba0bd"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o primeiro número:2\n",
+            "Digite o primeiro número:7\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Some todos os números de 1 a 10\n",
+        "soma= 0\n",
+        "for i in range(1,11):\n",
+        "  soma= soma+i\n",
+        "  print('Acumulado=>',soma)\n",
+        "print('Total >',soma)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GDVtAsj_jRtq",
+        "outputId": "147c7cec-c275-489e-db65-641b1b0d72fd"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Acumulado=> 1\n",
+            "Acumulado=> 3\n",
+            "Acumulado=> 6\n",
+            "Acumulado=> 10\n",
+            "Acumulado=> 15\n",
+            "Acumulado=> 21\n",
+            "Acumulado=> 28\n",
+            "Acumulado=> 36\n",
+            "Acumulado=> 45\n",
+            "Acumulado=> 55\n",
+            "Total i > 55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#soma de todos os número impares de 1 até 100\n",
+        "soma= 0\n",
+        "for i in range(1,101):\n",
+        "  if i%2==1:\n",
+        "    soma= soma + i\n",
+        "print('Total=>',soma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TsB_qz8Hlh8s",
+        "outputId": "b892e845-5f28-47ac-ad19-b2f12c284c1d"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Total=> 2500\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **WHILE**"
+      ],
+      "metadata": {
+        "id": "saNX-Xg6oD92"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Contador de 1 a 10 com while\n",
+        "\n",
+        "num= 1\n",
+        "while(num<=10):\n",
+        "  print(num)\n",
+        "  num = num+1\n",
+        "  #num+=1\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JJ4mvJD4oANb",
+        "outputId": "220861e9-031f-4409-bdc8-f1c17928be99"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Digite numeros até que o usuario digite\n",
+        "numero = int(input(\"Digite um número\"))\n",
+        "while numero!= 0:\n",
+        "  numero = int(input(\"Digite um número\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0rf8SeDFpww8",
+        "outputId": "235d2128-f46b-4e20-b3c7-5b16bed4bfe6"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite um número5\n",
+            "Digite um número8\n",
+            "Digite um número65\n",
+            "Digite um número678\n",
+            "Digite um número2\n",
+            "Digite um número25\n",
+            "Digite um número7\n",
+            "Digite um número356\n",
+            "Digite um número0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Somar números até que ousuario digite 0\n",
+        "numero = int(input(\"Digite um número\"))\n",
+        "soma= numero\n",
+        "while numero!= 0:\n",
+        "  numero = int(input(\"Digite um número\"))\n",
+        "  soma+= numero\n",
+        "\n",
+        "print('Total=',soma )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WFu1Wzsnxbb-",
+        "outputId": "ec2d2452-2b90-43ad-ab82-5f4450089840"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número1\n",
+            "Digite um número2\n",
+            "Digite um número3\n",
+            "Digite um número0\n",
+            "Total= 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Criando um menu de opções\n",
+        "opcao= 0\n",
+        "while opcao != 4:\n",
+        "  print('Escolha uma opção:')\n",
+        "  print('Digite 1 para opção 01')\n",
+        "  print('Digite 2 para opção 02')\n",
+        "  print('Digite 3 para opção 03')\n",
+        "  print('Digite 4 para SAIR')\n",
+        "  opcao= int(input('Sua opção=>'))\n",
+        "\n",
+        "if opcao==1:\n",
+        "  print('Você escolheu a opção 1')\n",
+        "if opcao==2:\n",
+        "  print('Você escolheu a opção 2')\n",
+        "\n",
+        "if opcao==3:\n",
+        "  print('Você escolheu a opção 3')\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vv5MdLqsy-Jz",
+        "outputId": "d71cca65-266a-4d4d-eadb-ce7a4198e51d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Escolha uma opção:\n",
+            "Digite 1 para opção 01\n",
+            "Digite 2 para opção 02\n",
+            "Digite 3 para opção 03\n",
+            "Digite 4 para SAIR\n",
+            "Sua opção=>3\n",
+            "Escolha uma opção:\n",
+            "Digite 1 para opção 01\n",
+            "Digite 2 para opção 02\n",
+            "Digite 3 para opção 03\n",
+            "Digite 4 para SAIR\n",
+            "Sua opção=>6\n",
+            "Escolha uma opção:\n",
+            "Digite 1 para opção 01\n",
+            "Digite 2 para opção 02\n",
+            "Digite 3 para opção 03\n",
+            "Digite 4 para SAIR\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
